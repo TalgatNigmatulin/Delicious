@@ -15,7 +15,7 @@ urlpatterns = [
     path('sushi-i-rolly/', views.ProductsList.as_view()),
     path('salaty/', views.ProductsList.as_view()),
     path('zakusky/', views.ProductsList.as_view()),
-
+   
     
 
     

@@ -1,9 +1,12 @@
+from requests import Response
 from rest_framework import generics, permissions
 from post.models import Products, Comment
 from post.serializers import PostSerializer, CommentSerializers
 from rest_framework import filters
 from rest_framework.pagination import PageNumberPagination
-from rest_framework import viewsets
+from rest_framework import generics, viewsets
+
+
 
 class ProductsListPagination(PageNumberPagination):
     page_size = 15
@@ -30,9 +33,6 @@ class ProductDetail(generics.RetrieveAPIView):
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializers
-
-
-
 
 
 
