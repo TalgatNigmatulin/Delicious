@@ -54,13 +54,21 @@ virtualenv venv
 ```python
 source venv/Scripts/activate
 ```
-- **Migration**
+
+- **Installing dependencies**
+
 ```python
-python manage.py runserver 
+pip install -r requirements.txt
 ```
+
+
 - **Create super user** 
 ```python
 python manage.py createsuperuser
 ```
 
+- **Start project**
+```python
+python manage.py runserver
+```
 
